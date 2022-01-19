@@ -33,7 +33,7 @@ def loading_cargo():
         for n in range(cargo_size, 0, -1):
             crate_distribution += list(combinations(cargo, n))
 
-        # determines from the list of combinations which have a sum less than or equal to half the weight of the cargo
+        # Determines from the list of combinations which have a sum less than or equal to half the weight of the cargo
         half_cargo = []
         for crate_set in crate_distribution:
             if sum(crate_set) <= half_weight_cargo:
